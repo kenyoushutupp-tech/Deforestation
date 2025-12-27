@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - Page 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #edebe4; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* SAW WATERMARK WITH 50% OPACITY */
+        .saw-background {
+            position: absolute;
+            font-size: 500px; /* Large scale */
+            opacity: 0.5;    /* 50% Opacity */
+            transform: rotate(-15deg);
+            z-index: 1;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* YEAR TOP RIGHT */
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* MAIN TITLE */
+        .title-container {
+            z-index: 10;
+            text-align: center;
+        }
+
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 120px;
+            color: #008450; 
+            letter-spacing: -4px;
+        }
+
+        .main-title span {
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        /* PRESENTER TEXT BOTTOM RIGHT */
+        .presenter {
+            position: absolute;
+            bottom: 40px;
+            right: 60px;
+            text-align: right;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* PROCEED BUTTON */
+        .proceed-btn {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: 2px solid #008450;
+            color: #008450;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 20;
+        }
+
+        .proceed-btn:hover {
+            background-color: #008450;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="saw-background">🪚</div>
+
+    <div class="year-label">2025</div>
+
+    <div class="title-container">
+        <h1 class="main-title">de<span>FOREST</span>ation</h1>
+    </div>
+
+    <div class="presenter">
+        Presented by Kenaz Jeriel R. Luzon
+    </div>
+
+    <button class="proceed-btn" onclick="location.href='p2.html'">
+        Proceed
+    </button>
+
+</body>
+</html>

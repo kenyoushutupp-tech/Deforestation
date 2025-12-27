@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - Objectives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a6b4a; /* Dark Green Background */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+
+        /* NAVIGATION & LABELS */
+        .nav-btn {
+            position: absolute;
+            background: none;
+            border: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+
+        .nav-btn:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .return-btn {
+            top: 40px;
+            left: 40px;
+            font-size: 14px;
+        }
+
+        /* ADDED NEXT BUTTON STYLE */
+        .next-btn {
+            bottom: 40px;
+            right: 40px;
+            font-size: 18px;
+        }
+
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            opacity: 0.8;
+        }
+
+        /* MAIN CONTENT GRID */
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            height: 100%;
+            padding: 80px 60px 40px 60px;
+            gap: 40px;
+        }
+
+        /* LEFT SIDE: IMAGE AND TITLE */
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .image-box {
+            width: 100%;
+            height: 60%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .page-title {
+            font-size: 120px;
+            font-style: italic;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        /* RIGHT SIDE: OBJECTIVES LIST */
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+        }
+
+        .objective-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 30px 0;
+        }
+
+        .obj-header {
+            display: flex;
+            align-items: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            margin-right: 20px;
+            font-size: 35px;
+            transform: rotate(45deg);
+        }
+
+        .obj-desc {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            padding-left: 60px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="nav-btn return-btn" onclick="location.href='p2.html'">
+        ← Return
+    </button>
+
+    <button class="nav-btn next-btn" onclick="location.href='p3-3.html'">
+        Next →
+    </button>
+
+    <div class="year-label">2025</div>
+
+    <main class="main-container">
+        <div class="left-panel">
+            <div class="image-box">
+                <img src="image2.jpg" alt="Team Discussion">
+            </div>
+            <h1 class="page-title">Objectives</h1>
+        </div>
+
+        <div class="right-panel">
+            <div class="objective-item">
+                <div class="obj-header">
+                    <span class="arrow">↘</span> Objective #1
+                </div>
+                <p class="obj-desc">
+                    To increase awareness about the environmental, social, and economic effects of deforestation.
+                </p>
+            </div>
+
+            <div class="objective-item">
+                <div class="obj-header">
+                    <span class="arrow">↘</span> Objective #2
+                </div>
+                <p class="obj-desc">
+                    To promote reforestation and responsible forest management among communities and local authorities.
+                </p>
+            </div>
+
+            <div class="objective-item">
+                <div class="obj-header">
+                    <span class="arrow">↘</span> Objective #3
+                </div>
+                <p class="obj-desc">
+                    To develop a culture of environmental care that ensures the protection of forests for future generations.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

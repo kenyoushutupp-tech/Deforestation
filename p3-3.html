@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - Problem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #edebe4;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVIGATION & LABELS */
+        .return-btn {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #008450;
+            color: #008450;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            border-radius: 4px;
+        }
+
+        .return-btn:hover {
+            background-color: #008450;
+            color: white;
+        }
+
+        /* ADDED NEXT BUTTON STYLE */
+        .next-btn {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            background: none;
+            border: none;
+            color: #008450;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+
+        .next-btn:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            z-index: 10;
+        }
+
+        /* MAIN CONTENT LAYOUT */
+        .main-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* LEFT SIDE: LARGE IMAGE */
+        .image-panel {
+            width: 40%;
+            height: 100%;
+            background-color: #ccc;
+            overflow: hidden;
+        }
+
+        .image-panel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* RIGHT SIDE: TEXT CONTENT */
+        .content-panel {
+            width: 60%;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-area {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .page-title {
+            font-size: 100px;
+            font-style: italic;
+            color: #008450;
+            line-height: 1;
+        }
+
+        .problem-text {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="return-btn" onclick="location.href='p2.html'">
+        ← Return
+    </button>
+
+    <button class="next-btn" onclick="location.href='p3-4.html'">
+        Next →
+    </button>
+
+    <div class="year-label">2025</div>
+
+    <main class="main-container">
+        <div class="image-panel">
+            <img src="image3.jpg" alt="Office Background">
+        </div>
+
+        <div class="content-panel">
+            <div class="header-area">
+                <h1 class="page-title">Problem</h1>
+            </div>
+            
+            <p class="problem-text">
+                Deforestation causes more than just the loss of trees. It leads to 
+                soil erosion, loss of biodiversity, and changes in water flow. 
+                Forests play a natural role in controlling floods because tree 
+                roots help absorb rainwater and hold the soil together. When 
+                forests are removed, the land loses its ability to soak up water, 
+                which leads to stronger and more frequent floods. The cutting of 
+                forests also increases greenhouse gas emissions, which worsens 
+                global warming. Indigenous people who depend on forests for 
+                their livelihood are displaced, while many animals lose their 
+                natural homes and become endangered. If deforestation 
+                continues, the damage to our environment could become 
+                permanent, affecting life on Earth in many ways.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

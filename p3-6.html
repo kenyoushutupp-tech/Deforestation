@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - How can I help?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #edebe4;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVIGATION BUTTONS */
+        .nav-btn {
+            position: absolute;
+            background: none;
+            border: none;
+            color: #008450;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+
+        .nav-btn:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .return-btn {
+            top: 40px;
+            left: 40px;
+        }
+
+        .next-btn {
+            bottom: 40px;
+            right: 40px;
+            font-size: 18px;
+        }
+
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* HEADER SECTION */
+        .header-container {
+            width: 100%;
+            padding: 80px 100px 20px 100px;
+        }
+
+        .page-title {
+            font-style: italic;
+            font-size: 100px;
+            color: #008450;
+            line-height: 0.9;
+        }
+
+        /* CONTENT SECTION */
+        .content-container {
+            padding: 40px 100px;
+            max-width: 1100px;
+            position: relative;
+        }
+
+        .help-text {
+            font-size: 26px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* DECORATIVE BRUSHSTROKE */
+        .brush-accent {
+            position: absolute;
+            bottom: -150px;
+            right: -150px;
+            font-size: 250px;
+            opacity: 0.6;
+            filter: hue-rotate(90deg); /* Adjusts emoji color to match green theme */
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="nav-btn return-btn" onclick="location.href='p2.html'">
+        ← Return
+    </button>
+
+    <button class="nav-btn next-btn" onclick="location.href='p4.html'">
+        Next →
+    </button>
+
+    <div class="year-label">2025</div>
+
+    <header class="header-container">
+        <h1 class="page-title">How can I<br>help?</h1>
+    </header>
+
+    <main class="content-container">
+        <p class="help-text">
+            Everyone can take part in protecting forests. Join local or online tree-planting programs. 
+            Practice the 3Rs: Reduce, Reuse, Recycle to cut down on waste. Avoid buying products 
+            that come from unsustainable sources. Share information about forest conservation with 
+            your family, friends, or community. Support organizations that work to protect forests 
+            and wildlife. Even small steps, when done by many, can create a big impact for a 
+            greener and healthier planet.
+        </p>
+
+        <div class="brush-accent">🖌️</div>
+    </main>
+
+</body>
+</html>

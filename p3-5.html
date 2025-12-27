@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - Solution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #edebe4;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVIGATION BUTTONS */
+        .nav-btn {
+            position: absolute;
+            background: none;
+            border: none;
+            color: #008450;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+
+        .nav-btn:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .return-btn {
+            top: 40px;
+            left: 40px;
+        }
+
+        .next-btn {
+            bottom: 40px;
+            right: 40px;
+            font-size: 18px;
+        }
+
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* HEADER SECTION */
+        .header-container {
+            width: 100%;
+            padding: 80px 100px 40px 100px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .page-title {
+            font-style: italic;
+            font-size: 100px;
+            color: #008450;
+            line-height: 1;
+        }
+
+        /* EMOJI STYLING */
+        .lightbulb-emoji {
+            font-size: 80px;
+            line-height: 1;
+        }
+
+        /* SOLUTION CONTENT */
+        .content-container {
+            padding: 0 100px;
+            max-width: 1200px;
+        }
+
+        .solution-text {
+            font-size: 26px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="nav-btn return-btn" onclick="location.href='p2.html'">
+        ← Return
+    </button>
+
+    <button class="nav-btn next-btn" onclick="location.href='p3-6.html'">
+        Next →
+    </button>
+
+    <div class="year-label">2025</div>
+
+    <header class="header-container">
+        <h1 class="page-title">Solution</h1>
+        <span class="lightbulb-emoji">💡</span>
+    </header>
+
+    <main class="content-container">
+        <p class="solution-text">
+            To solve deforestation, we must focus on sustainable actions and cooperation. Governments should 
+            strengthen laws against illegal logging, promote reforestation, and support eco-friendly industries. 
+            Businesses can use sustainable materials and reduce waste. People can help by planting trees, 
+            recycling, and choosing products that are environmentally safe. Education also plays a key role 
+            because informed citizens are more likely to care for the environment and act responsibly.
+        </p>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deFORESTation - Statistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #edebe4;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVIGATION BUTTONS */
+        .nav-btn {
+            position: absolute;
+            background: none;
+            border: none;
+            color: #008450;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 100;
+            transition: opacity 0.3s;
+        }
+
+        .nav-btn:hover {
+            text-decoration: underline;
+            opacity: 0.7;
+        }
+
+        .return-btn {
+            top: 40px;
+            left: 40px;
+        }
+
+        .next-btn {
+            bottom: 40px;
+            right: 40px;
+            font-size: 18px; /* Slightly larger for visibility */
+        }
+
+        .year-label {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* HEADER SECTION */
+        .header-bar {
+            width: 100%;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .page-title {
+            font-style: italic;
+            font-size: 85px;
+            color: #008450;
+        }
+
+        /* STATISTICS CONTENT */
+        .stats-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 100px 60px 100px;
+        }
+
+        .stats-list {
+            list-style-type: disc;
+            max-width: 1000px;
+        }
+
+        .stats-list li {
+            font-size: 32px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .stats-list li::marker {
+            color: #333;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="nav-btn return-btn" onclick="location.href='p2.html'">
+        ← Return
+    </button>
+
+    <button class="nav-btn next-btn" onclick="location.href='p3-5.html'">
+        Next →
+    </button>
+
+    <div class="year-label">2025</div>
+
+    <header class="header-bar">
+        <h1 class="page-title">Statistics</h1>
+    </header>
+
+    <main class="stats-container">
+        <ul class="stats-list">
+            <li>Around 10 million hectares of forest are lost each year, which is equal to 27 soccer fields every minute.</li>
+            <li>About 15 to 20 percent of greenhouse gas emissions come from deforestation and forest degradation.</li>
+            <li>Over 80 percent of all land-based animals and plants live in forests, and many of them are now at risk of extinction.</li>
+            <li>If current rates continue, the world's rainforests could disappear within the next 100 years, changing the Earth's climate forever.</li>
+        </ul>
+    </main>
+
+</body>
+</html>
